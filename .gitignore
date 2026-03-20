@@ -26,3 +26,33 @@ Thumbs.db
  
 verify.py
 photos/
+dbt_internal_packages/
+
+# Credentials & environnement
+.env
+profiles.yml
+ 
+# dbt
+target/
+dbt_packages/
+logs/
+ 
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+ 
+# OS
+.DS_Store
+Thumbs.db
+ 
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+ 
+verify.py
+photos/
