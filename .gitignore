@@ -26,3 +26,4 @@ Thumbs.db
  
 verify.py
 photos/
+dbt_internal_packages/
