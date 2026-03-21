@@ -7,6 +7,11 @@ L'objectif était de maîtriser les outils **dbt Core**, **dbt Cloud** et **Stre
 en travaillant sur un jeu de données musicales chargé depuis un bucket S3 dans Snowflake.
 
 ---
+## Demo
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://dbt-music-9bkgyxftjnrqdtszttycnv.streamlit.app/)
+![Dashboard](dashboard.png)
+
 
 ## Stack technique
 
