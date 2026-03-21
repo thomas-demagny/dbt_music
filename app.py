@@ -61,23 +61,22 @@ st.markdown("""
 """, unsafe_allow_html=True)
  
 PAGES = {
-    "🏠 Accueil":              0,
-    "Q1 — Albums multi-CD":    1,
-    "Q2 — Morceaux 2000/2002": 2,
-    "Q3 — Rock & Jazz":        3,
-    "Q4 — Top 10 albums":      4,
-    "Q5 — Albums par artiste": 5,
-    "Q6 — Tracks par artiste": 6,
-    "Q7 — Genre années 2000":  7,
-    "Q8 — Playlists > 4 min":  8,
-    "Q9 — Rock en France":     9,
-    "Q10 — Taille par genre":  10,
-    "Q11 — Playlists < 1990":  11,
+    "🏘️ Accueil":              0,
+    "🎸Q1 — Albums multi-CD":    1,
+    "🎼Q2 — Morceaux 2000/2002": 2,
+    "🎸Q3 — Rock & Jazz":        3,
+    "🎼Q4 — Top 10 albums":      4,
+    "🎤Q5 — Albums par artiste": 5,
+    "🎚️Q6 — Tracks par artiste": 6,
+    "🎸Q7 — Genre années 2000":  7,
+    "🎶Q8 — Playlists > 4 min":  8,
+    "🎸Q9 — Rock en France":     9,
+    "🎼Q10 — Taille par genre":  10,
+    "🎶Q11 — Playlists < 1990":  11,
 }
  
 with st.sidebar:
     st.markdown("## 🎵 Music Analytics")
-    st.caption(f"Données du {data['generated_at']}")
     st.divider()
     page = st.radio("Navigation", list(PAGES.keys()), label_visibility="collapsed")
  
@@ -86,7 +85,6 @@ num = PAGES[page]
 # ── ACCUEIL ──
 if num == 0:
     st.title("🎵 Music Analytics Dashboard")
-    st.caption(f"Données exportées depuis Snowflake le {data['generated_at']}")
     st.divider()
  
     df5 = get_df(5)
@@ -184,4 +182,3 @@ else:
  
         st.subheader("Données complètes")
         st.dataframe(df, use_container_width=True, hide_index=True)
- 
