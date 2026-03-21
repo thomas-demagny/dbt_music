@@ -24,7 +24,7 @@ Thumbs.db
 .idea/
 *.code-workspace
  
-verify.py
+verifications/
 photos/
 dbt_internal_packages/
 
@@ -54,5 +54,4 @@ Thumbs.db
 .idea/
 *.code-workspace
  
-verify.py
 photos/
